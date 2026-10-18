@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nath Kewley Photos</title>
+<meta name="theme-color" content="#1e1f29">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="#/">Nath Kewley Photos</a>
+  <nav id="crumb" aria-label="Breadcrumb"></nav>
+</header>
+<main id="app" aria-live="polite"></main>
+
+<div id="lb" class="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <div class="lb-top glass">
+    <span id="lb-count"></span>
+    <span class="grow"></span>
+    <button id="lb-info" aria-label="Photo details" aria-pressed="false">Info</button>
+    <button id="lb-close" aria-label="Close">Close</button>
+  </div>
+  <button class="lb-nav prev glass" id="lb-prev" aria-label="Previous photo">‹</button>
+  <figure class="lb-stage"><img id="lb-img" alt=""></figure>
+  <button class="lb-nav next glass" id="lb-next" aria-label="Next photo">›</button>
+  <aside id="lb-panel" class="lb-panel glass" aria-label="Photo details"></aside>
+</div>
+<script src="app.js" type="module"></script>
+</body>
+</html>
